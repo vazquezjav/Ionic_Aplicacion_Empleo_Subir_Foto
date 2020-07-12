@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>lista-empleos</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--
+  <h1>Hola Nuevo </h1>
+  <div *ngFor="let empleo of empleados | async">
+    <h3>{{empleo.titulo}}</h3>
+    <p>{{empleo.descripcion}}</p>
+    <p>{{empleo.salario}}</p>
+  </div>
+-->
+  <ion-list *ngFor="let empleo of empleados | async; trackBy: trackByFn">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img [src]="empleo.imagen.url">
+      </ion-avatar>
+      <ion-label (click)="showEmpleo(empleo.uid)" >
+        <h3>{{empleo.titulo}}</h3>
+        <p>{{empleo.descripcion}}</p>
+        <p>{{empleo.salario}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="showCrearEmpleo()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+ <!-- <div *ngFor="let cosa of cosas">
+    <h3>{{cosa.id}}</h3>
+    <p>{{cosa.nombres}}</p>
+  </div>
+
+  
+<ion-list *ngFor="let cosa of cosas">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../../../assets/img/walle.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h3>{{cosa.id}}</h3>
+         <p>{{cosa.nombres}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  -->
+
+  <div class="ion-padding">
+    <ion-button expand="block" type="submit" (click)="home()">Home</ion-button>
+  </div>
+ 
+</ion-content >

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>experiencia</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Cargo</ion-label>
+    <ion-input  [(ngModel)]="experiencia.cargo" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Funcion</ion-label>
+    <ion-input  [(ngModel)]="experiencia.funcion" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >Tiempo</ion-label>
+    <ion-input  [(ngModel)]="experiencia.tiempo"   ></ion-input>
+  </ion-item>
+  <ion-button color="primary" (click)="enviar()" >Siguiente</ion-button>
+
+
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>datos</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h1>Hola {{person.nombre}}</h1>
+
+  <ion-item>
+    <ion-label>Nombre</ion-label>
+    <ion-input  [(ngModel)]="person.nombre" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cedula</ion-label>
+    <ion-input  [(ngModel)]="person.cedula"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Direccion</ion-label>
+    <ion-input  [(ngModel)]="person.direccion"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Start Date</ion-label>
+    <ion-datetime  [(ngModel)]="person.fechanacimiento" placeholder="Select Date"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sexo</ion-label>
+    <ion-input  [(ngModel)]="person.sexo"></ion-input>
+  </ion-item>
+
+  <ion-button color="primary" (click)="noexperiencia()" >Sin Experiencia</ion-button>
+  <ion-button color="primary" (click)="experiencia()" >Experiencia</ion-button>
+
+</ion-content>

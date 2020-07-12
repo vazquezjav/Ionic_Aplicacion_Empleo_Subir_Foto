@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>estudios</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Titulo</ion-label>
+    <ion-input  [(ngModel)]="estudios.titulo" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Area</ion-label>
+    <ion-input  [(ngModel)]="estudios.area" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Rendimiento</ion-label>
+    <ion-input  [(ngModel)]="estudios.rendimiento" ></ion-input>
+  </ion-item>
+
+  <ion-button color="primary" (click)="enviar()" >Siguiente</ion-button>
+
+
+</ion-content>

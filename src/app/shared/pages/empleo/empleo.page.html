@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Empleo</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="(empleo | async) as empleo">
+
+  <ion-card>
+   <!-- <img src="../../../../assets/img/walle.jpg">-->
+   <img class="feed_post_photo_img" [src]="empleo.imagen.url">
+    <ion-card-header>
+     
+      <ion-card-subtitle>Empleo</ion-card-subtitle>
+      <ion-card-title>{{empleo.titulo}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+     {{empleo.descripcion}}
+    <br>
+     {{empleo.salario}}
+     <h3 style="color:aqua" (click)="pasarEmpleo()">Editar</h3>
+    </ion-card-content>
+  </ion-card>
+  <div class="ion-padding">
+    <ion-button expand="block" type="submit" (click)="edit()">Guardar</ion-button>
+  </div>
+</ion-content>

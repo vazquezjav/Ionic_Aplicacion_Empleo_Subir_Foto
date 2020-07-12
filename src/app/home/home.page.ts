@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Person } from 'src/interfaces/person';
+import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(public router: Router) {}
 
+  saludar(){
+    this.router.navigate(['datos']);
+  }
+
+  lista(){
+    this.router.navigate(['lista-empleos']);
+  }
 }

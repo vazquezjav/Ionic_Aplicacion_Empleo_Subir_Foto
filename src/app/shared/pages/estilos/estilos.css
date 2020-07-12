@@ -1,0 +1,14 @@
+.feed_post_photo {
+    float: left;
+    height: 40px;
+    margin-right: 30px;
+    width: 40px;
+}
+    
+.feed_post_photo_img{
+    border: 1px solid #07e5d8;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #000;
+    height: 100%;
+    width: 100%;
+}

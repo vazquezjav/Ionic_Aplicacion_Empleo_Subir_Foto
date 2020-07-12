@@ -225,4 +225,50 @@
 
     --ion-tab-bar-background: #1f1f1f;
   }
+  .feed_post_photo_img{
+    border: 1px solid #07e5d8;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #000;
+    height: 100%;
+    width: 100%;
+    }
+  .feed_post_photo {
+    float: left;
+    height: 40px;
+    margin-right: 30px;
+    width: 40px;
+    }
+  .toast-scheme {
+      .toast-message { 
+          //background: white !important ;
+          color: red!important ;
+          opacity: 1;
+      }
+      .toast-container {
+          background: blue !important ;
+          color: red!important ;
+  
+      }
+      .toast-md {
+          background: blue  !important ;
+          color: red!important ;
+          
+  
+      }
+      //background: white  !important ;
+      color: steelblue !important ;
+      .ion-toast{
+          background: blue  !important ;
+          color: red!important ;
+      }
+  }
+  ion-toast {
+    --max-width: 75%;
+    --background: lightgray;
+  }
+  .my-toast {
+      .toast-message {
+            text-align: center;
+       }
+  }
 }

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sin experiencia</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Aspiracion</ion-label>
+    <ion-input  [(ngModel)]="noexperiencia.aspiracion" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Dominio</ion-label>
+    <ion-input  [(ngModel)]="noexperiencia.dominio" ></ion-input>
+  </ion-item>
+  <ion-button color="primary" (click)="enviar()" >Siguiente</ion-button>
+</ion-content>

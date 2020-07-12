@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Final</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Nombre</ion-label>
+    <ion-input [value]="data.nombre" readonly></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cedula</ion-label>
+    <ion-input [value]="data.cedula" readonly></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Direccion</ion-label>
+    <ion-input [value]="data.direccion" readonly></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cargo</ion-label>
+    <ion-input [value]="experiencia.cargo" readonly></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Funcion</ion-label>
+    <ion-input [value]="experiencia.funcion" readonly></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Aspiracion</ion-label>
+    <ion-input [value]="noexperiencia.aspiracion" readonly></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Dominio</ion-label>
+    <ion-input [value]="noexperiencia.dominio" readonly></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Titulo</ion-label>
+    <ion-input [value]="estudios.titulo" readonly></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Area</ion-label>
+    <ion-input [value]="estudios.area" readonly></ion-input>
+  </ion-item>
+  <ion-button color="primary" (click)="regresar()" >Inicio</ion-button>
+</ion-content>
