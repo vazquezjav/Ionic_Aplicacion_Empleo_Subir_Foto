@@ -10,5 +10,5 @@
 
 
 ## Carga foto, del empleo seleccionado 
-![Alt text](img/empleo.PNG?raw=true "empleo") 
+![Alt text](img/empleo2.PNG?raw=true "empleo") 
 
