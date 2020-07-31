@@ -17,6 +17,9 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
+import { HomePageModule } from './home/home.module';
+
+import {AndroidFingerprintAuth} from '@ionic-native/android-fingerprint-auth/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -27,15 +30,16 @@ import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
-    AngularFireStorageModule
-    
+    AngularFireStorageModule,
+    HomePageModule
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Camera,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    AngularFirestore
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy, },
+    AngularFirestore,
+    AndroidFingerprintAuth,
   ],
   bootstrap: [AppComponent]
 })

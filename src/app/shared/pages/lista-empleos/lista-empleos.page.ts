@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { EmpleosService } from '../../services/empleos.service';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
+import { AuxPage } from 'src/app/data/aux/aux.page';
 
 @Component({
   selector: 'app-lista-empleos',
@@ -20,6 +21,12 @@ export class ListaEmpleosPage implements OnInit {
     
     this.cosas.push({id:10,nombres:"aasa"})
     this.cosas.push({id:11,nombres:"ppp"})
+
+    //para senialar ciertas caracteristicas.....terminar
+    this.empleados.subscribe(data =>{
+      
+    })
+
   }
 
   showEmpleo(id: any){

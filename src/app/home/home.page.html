@@ -30,4 +30,7 @@
  <!--<ion-button color="primary" (click)="saludar()" >Siguiente</ion-button> -->
 
  <ion-button color="primary" (click)="lista()" >Empleos</ion-button>
+ <app-fingerprint-auth [icon]="icono" (finish)="saludar2($event)"></app-fingerprint-auth>
+ <!--<app-fingerprint-auth [icon]="'camera'" [type]="'camera'" (uploadFinished)="imagenCargada($event)"></app-fingerprint-auth>-->
+ 
 </ion-content>

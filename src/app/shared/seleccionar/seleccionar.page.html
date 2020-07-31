@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>seleccionar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Users</ion-label>
+      <ion-select name="selcc" [compareWith]="compareWith" [selectedText]="selectcategory" [(ngModel)]="selectcategory"  (ionChange)="codeSelected()" >
+        <ion-select-option *ngFor="let opcion of opciones">{{opcion.first}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+  <div class="ion-padding">
+    <ion-button expand="block"  type="submit" (click)="guardar()">Guardar</ion-button>
+    
+  </div>
+  
+</ion-content>

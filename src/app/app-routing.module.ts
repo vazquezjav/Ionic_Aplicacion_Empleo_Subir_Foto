@@ -55,6 +55,10 @@ const routes: Routes = [
     path: 'editar-empleo',
     loadChildren: () => import('./shared/pages/editar-empleo/editar-empleo.module').then( m => m.EditarEmpleoPageModule)
   },
+  {
+    path: 'seleccionar',
+    loadChildren: () => import('./shared/seleccionar/seleccionar.module').then( m => m.SeleccionarPageModule)
+  },
 ];
 
 @NgModule({

@@ -24,7 +24,7 @@
       <ion-label (click)="showEmpleo(empleo.uid)" >
         <h3>{{empleo.titulo}}</h3>
         <p>{{empleo.descripcion}}</p>
-        <p>{{empleo.salario}}</p>
+        <p [class]="empleo.salario>600?'salario':''">{{empleo.salario}}</p>
       </ion-label>
     </ion-item>
   </ion-list>
