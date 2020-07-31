@@ -1,14 +1,18 @@
 # Resultados subir fotos para empleos
-## Camara telefono
-![Alt text](img/camara.PNG?raw=true "Camara telefono") 
+## Pagina Inicio
+![Alt text](img/lista-poesias.PNG?raw=true "Home") 
 
-## Subida Imagen
-![Alt text](img/subida_imagen.PNG?raw=true "Subida-imagen") 
-
-## Lista empleos
-![Alt text](img/lista-empleos.PNG?raw=true "lista-empleo") 
+## Registro
+![Alt text](img/registro.PNG?raw=true "Registro") 
 
 
-## Carga foto, del empleo seleccionado 
-![Alt text](img/empleo2.PNG?raw=true "empleo") 
+Despues de registrarse ya puede realizar su publicacion de una poesia
+![Alt text](img/nuevapoesia.PNG?raw=true "nuevaPoesia") 
 
+Se puede observar en el home, en este caso es la lista de publicaciones, las mas recientes 
+
+![Alt text](img/lista-poesias.PNG?raw=true "lista") 
+
+Al seleccionar una podemos ver las caracteristicas de cada una 
+
+![Alt text](img/poesia.PNG?raw=true "poesia") 
