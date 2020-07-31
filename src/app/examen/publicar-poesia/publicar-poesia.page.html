@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>publicar-poesia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full" class="ion-no-margin ion-no-padding">
+  <ion-item>
+    <ion-label>Nombre</ion-label>
+    <ion-input  [(ngModel)]= "poesia.nombre" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Texto</ion-label>
+    <ion-input [(ngModel)]= "poesia.texto" ></ion-input>
+  </ion-item>
+</ion-list>
+
+<app-image-upload [icon]="'camera'" [type]="'camera'" (uploadFinished)="imagenCargada($event)"></app-image-upload>
+
+<div class="ion-padding">
+  <ion-button (click)="nuevo()">
+    Login 
+  </ion-button>
+</div>
+</ion-content>

@@ -25,7 +25,7 @@ export class AppComponent {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
 
-      this.androidFingerprintAuth.isAvailable().then((result)=>{
+      /*this.androidFingerprintAuth.isAvailable().then((result)=>{
 
         if(result.isAvailable){
           this.androidFingerprintAuth.encrypt({
@@ -60,7 +60,7 @@ export class AppComponent {
       }).catch(error=>{
         alert(JSON.stringify(error));
         
-      });
+      });*/
       
     });
   }

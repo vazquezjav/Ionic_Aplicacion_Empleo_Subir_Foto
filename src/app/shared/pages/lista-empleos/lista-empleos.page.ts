@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { EmpleosService } from '../../services/empleos.service';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
-import { AuxPage } from 'src/app/data/aux/aux.page';
+
 
 @Component({
   selector: 'app-lista-empleos',

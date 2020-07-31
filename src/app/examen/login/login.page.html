@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Correo</ion-label>
+    <ion-input type="text"  [(ngModel)]="email"  ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Contrasenia</ion-label>
+    <ion-input type="password"  [(ngModel)]="password" ></ion-input>
+  </ion-item>
+
+<ion-button (click)="signUpWithEmail()">
+  Login 
+</ion-button>
+
+</ion-content>

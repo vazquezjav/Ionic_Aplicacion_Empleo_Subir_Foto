@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>lista-poesias</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let poesia of poesias | async; trackBy: trackByFn">
+    <ion-item>
+
+      <ion-label (click)="showPoesia(poesia.uid)">
+        <h3>{{poesia.nombre}}</h3>
+        <p>{{poesia.texto}}</p>
+        <p >{{poesia.autor}}</p>
+        <p >{{poesia.fecha}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+   <div class="ion-padding">
+    <ion-button expand="block" type="submit" (click)="publicar()">Publicar</ion-button>
+  </div>
+</ion-content>

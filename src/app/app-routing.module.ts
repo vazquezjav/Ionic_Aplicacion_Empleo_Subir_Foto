@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'lista-poesias',
     pathMatch: 'full'
   },
   {
@@ -58,6 +58,34 @@ const routes: Routes = [
   {
     path: 'seleccionar',
     loadChildren: () => import('./shared/seleccionar/seleccionar.module').then( m => m.SeleccionarPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./examen/registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./examen/registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./examen/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'publicar-poesia',
+    loadChildren: () => import('./examen/publicar-poesia/publicar-poesia.module').then( m => m.PublicarPoesiaPageModule)
+  },
+  {
+    path: 'lista-poesias',
+    loadChildren: () => import('./examen/lista-poesias/lista-poesias.module').then( m => m.ListaPoesiasPageModule)
+  },
+  {
+    path: 'ver-poesia',
+    loadChildren: () => import('./examen/ver-poesia/ver-poesia.module').then( m => m.VerPoesiaPageModule)
+  },
+  {
+    path: 'poesia/:id',
+    loadChildren: () => import('./examen/poesia/poesia.module').then( m => m.PoesiaPageModule)
   },
 ];
 

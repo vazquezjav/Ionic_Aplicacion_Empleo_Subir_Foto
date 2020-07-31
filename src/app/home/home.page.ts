@@ -28,5 +28,16 @@ export class HomePage {
     console.log("imagen Cargada",e);
     console.log(JSON.stringify(e));
   }
+  registro(){
+    this.router.navigate(['registro']);
+  }
+
+  login(){
+    this.router.navigate(['login'])
+  }
+
+  registrate(){
+    this.router.navigate(['registro']);
+  }
 
 }

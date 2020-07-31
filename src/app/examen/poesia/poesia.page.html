@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>poesia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngIf="(poesia | async) as poesia"> 
+    
+   <img class="feed_post_photo_img" [src]="poesia.imagen.url">
+     <ion-card-header>
+      
+       <ion-card-subtitle>Poesia</ion-card-subtitle>
+       <ion-card-title>{{poesia.nombre}}</ion-card-title>
+     </ion-card-header>
+     <ion-card-content>
+      {{poesia.texto}}
+     <br>
+      {{poesia.autor}}
+     </ion-card-content>
+   </ion-card>
+
+   <div class="ion-padding">
+    <ion-button expand="block" type="submit" (click)="compartir()">Compartir</ion-button>
+  </div>
+</ion-content>
