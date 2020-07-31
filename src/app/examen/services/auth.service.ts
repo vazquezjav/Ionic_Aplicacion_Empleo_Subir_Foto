@@ -85,7 +85,7 @@ export class AuthService {
 
   getPoesias(): Observable<any[]>{
     return this.afs.collection('poesia', 
-      ref => ref.orderBy('fecha', 'asc')).valueChanges();
+      ref => ref.orderBy('fecha', 'desc')).valueChanges();
   }
 
 }

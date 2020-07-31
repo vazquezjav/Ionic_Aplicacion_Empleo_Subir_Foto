@@ -17,7 +17,7 @@ import { ImageUploadComponent } from 'src/app/components/image-upload/image-uplo
     IonicModule,
     CrearEmpleoPageRoutingModule
   ],
-  declarations: [CrearEmpleoPage,TestcomponentComponent,ImageUploadComponent],
-  exports: [TestcomponentComponent,ImageUploadComponent]
+  declarations: [CrearEmpleoPage,TestcomponentComponent],
+  exports: [TestcomponentComponent]
 })
 export class CrearEmpleoPageModule {}

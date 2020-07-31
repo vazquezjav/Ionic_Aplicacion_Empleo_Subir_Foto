@@ -66,6 +66,7 @@ export class PublicarPoesiaPage implements OnInit {
       
       this.auth.insertPoesia(this.poesia);
       
+      this.router.navigate(['lista-poesias'])
     });
     
   }
